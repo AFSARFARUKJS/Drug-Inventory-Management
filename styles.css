@@ -1,0 +1,92 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling with background image */
+body {
+    background-image: url('./bg\ login.png'); /* Adjust path if necessary */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+/* Login container with transparency */
+.login-container {
+    background: rgba(255, 255, 255, 0.2); /* White background with 20% opacity */
+    /* backdrop-filter: blur(10px); Adds a blur effect to background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for a lifted effect */
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+h2{
+    text-align: center;
+}
+.login-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Styling the input fields and button */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent input fields */
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border-radius: 20px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Placeholder text color */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 75%;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}

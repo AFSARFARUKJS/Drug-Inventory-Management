@@ -1,0 +1,46 @@
+<!-- Index.html file -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scan.css">
+    <title>QR Code Scanner / Reader</title>
+</head>
+
+<body>
+    <div class="container" >
+        
+        <h1>Scan QR Codes</h1>
+        <div class="section">
+            <div id="my-qr-reader"></div>
+        </div>
+        <div id="inventory-section" style="display:none;">
+            <h2>Inventory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="inventory-rows"></tbody>
+            </table>
+            <div id="billing-section" style="display: none;">
+                <input type="text" id="sell-name" placeholder="Tablet Name">
+            </div>
+        </div>
+        <button onclick="back()">⬅️ Back To </button>
+    </div>
+    
+    
+    <script
+        src="https://unpkg.com/html5-qrcode">
+    </script>
+    <script src="script2.js"></script>
+</body>
+
+</html>

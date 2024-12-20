@@ -1,0 +1,104 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Newly added */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.delete-button {
+  background-color: #f44336;
+  margin-left: 10px;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+.section {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+input {
+  margin: 5px;
+  padding: 8px;
+  width: calc(100% - 16px);
+}
+
+/* To handle date input styling */
+input[type="date"] {
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin: 5px;
+}
+
+.total {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: calc(100% - 20px);
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+}
